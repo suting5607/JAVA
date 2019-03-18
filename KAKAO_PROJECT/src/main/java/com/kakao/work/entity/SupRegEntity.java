@@ -12,7 +12,9 @@ import lombok.NonNull;
 @Entity
 @Table(name="SupRegEntity")
 public class SupRegEntity {
-	
+	/**
+	 *지자체명, 지자체 코드
+	 **/
 	@Id 
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private @NonNull Integer id;  //id 

@@ -15,6 +15,11 @@ import lombok.NonNull;
 @Entity
 @Table(name="SupReg")
 public class SupReg {
+	/**
+	 *ID, 지자체 코드, 지원대상, 용도, 지원한도, 이차보전, 추천기관, 관리점, 취급점, 생성일자, 수정일자 
+	 *엔티티
+	 **/
+	
 	@Id 
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private @NonNull Integer id;  //id

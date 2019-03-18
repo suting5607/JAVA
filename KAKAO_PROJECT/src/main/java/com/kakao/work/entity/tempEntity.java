@@ -2,6 +2,10 @@ package com.kakao.work.entity;
 
 public class tempEntity {
 	
+	/**
+	 * json 리턴을 위한 객체
+	 **/
+	
 	private String region;
 	private String target;
 	private String usage;

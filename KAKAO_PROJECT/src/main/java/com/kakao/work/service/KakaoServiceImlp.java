@@ -30,6 +30,10 @@ public class KakaoServiceImlp implements KakaoService{
     private SupRegEntityRepository supRegEntityRepository;
 	
 	public @ResponseBody List<tempEntity> insert() {
+		/**
+		 *1. 바탕화면 경로에 kakao_sample1.csv 파일을 둔다.
+		 *2. 파일을 읽어 H2 DB적재 후 각 객체의 리스트를 json형식으로 리턴한다.
+		 **/
 
 		System.out.println("★★★★★★★★★★★★★★★★★★★★★★★★★");
 		int flag = 0;
@@ -98,6 +102,10 @@ public class KakaoServiceImlp implements KakaoService{
 	}
 
 	public @ResponseBody tempEntity search(String region) {
+		
+		/**
+		 * 1. region값을 받아와 테이블에서 해당 값에 매핑되는 정보를 가져와 json형식으로 return한다.
+		 **/
 		
 		SupReg supReg = new SupReg();
 		SupRegEntity supRegEntity = new SupRegEntity();
